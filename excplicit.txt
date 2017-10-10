@@ -1,0 +1,48 @@
+Let us discuss a few of them at length:
+
+#1) elementToBeClickable() – The expected condition waits for an element to be clickable i.e. it should be present/displayed/visible on the screen as well as enabled.
+
+Sample Code
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath(“//div[contains(text(),’COMPOSE’)]”)));
+
+#2) textToBePresentInElement() – The expected condition waits for an element having a certain string pattern.
+
+Sample Code
+wait.until(ExpectedConditions.textToBePresentInElement(By.xpath(“//div[@id= ‘forgotPass'”), “text to be found”));
+
+#3) alertIsPresent()- The expected condition waits for an alert box to appear.
+
+Sample Code
+wait.until(ExpectedConditions.alertIsPresent()) !=null);
+
+#4) titleIs() – The expected condition waits for a page with a specific title.
+
+Sample Code
+wait.until(ExpectedConditions.titleIs(“gmail”));
+
+#5) frameToBeAvailableAndSwitchToIt() – The expected condition waits for a frame to be available and then as soon as the frame is available, the control switches to it automatically.
+
+Sample Code
+wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id(“newfra
+
+
+
+
+    alertIsPresent()
+    elementSelectionStateToBe()
+    elementToBeClickable()
+    elementToBeSelected()
+    frameToBeAvaliableAndSwitchToIt()
+    invisibilityOfTheElementLocated()
+    invisibilityOfElementWithText()
+    presenceOfAllElementsLocatedBy()
+    presenceOfElementLocated()
+    textToBePresentInElement()
+    textToBePresentInElementLocated()
+    textToBePresentInElementValue()
+    titleIs()
+    titleContains()
+    visibilityOf()
+    visibilityOfAllElements()
+    visibilityOfAllElementsLocatedBy()
+    visibilityOfElementLocated()

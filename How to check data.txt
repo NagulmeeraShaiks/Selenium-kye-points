@@ -1,0 +1,15 @@
+
+
+After entering the data from the front-end application interface, how do you test whether a database in updated or not?
+Ans: It is totally depends on the application interface that you are using. These are some following ways,
+
+    You can verify only from the front-end when application interface shows view functionality of the data you enter. Mainly, Black box test engineers do this functionality verification test in this way.
+    If application interface doesn’t provide view functionality of the data you enter, then you can check for database update by using relevant SQL/Oracle query.
+    Checkpoint function of WinRunner/QTP can also be used to check for database update.
+
+
+with as table_name(
+select * row_num(),over(PARTITION by ID,Order By Id)as row_num)
+delete from table_name where row_num> 1;
+
+select * from table where 8=(select count(distnct sal)from table) where e.colum>=e.colum
